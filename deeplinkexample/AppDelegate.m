@@ -42,4 +42,22 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+-(BOOL) application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options {
+    if ([[url host] isEqualToString:@"zrm"]) {
+        if ([[url path] isEqualToString:@"detail"]) {
+            
+        } else if ([[url path] isEqualToString:@"review"]) {
+        
+        } else if ([[url path] isEqualToString:@""]) {
+        
+        } else {
+            return NO;
+        }
+        return YES;
+    } else {
+        return NO;
+    }
+}
+
+
 @end
