@@ -43,17 +43,25 @@
 }
 
 -(BOOL) application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options {
+    NSString *path = [url path];
+    
+    if ([[path substringWithRange:NSMakeRange(0, 1)] isEqualToString:@"/"]) {
+        path = [path substringWithRange:NSMakeRange(1, path.length-1)];
+    }
+    
+    NSArray *paths = [path pathComponents];
+    NSLog(@"%@",paths);
     if ([[url host] isEqualToString:@"zrm"]) {
-        if ([[url path] isEqualToString:@"/root"]) {
+        if ([[url path] isEqualToString:@"root"]) {
             UINavigationController *navVC = (UINavigationController*)self.window.rootViewController;
             [navVC popToRootViewControllerAnimated:NO];
-        } else if ([[url path] isEqualToString:@"/secondvc"]) {
+        } else if ([(NSString*)[paths objectAtIndex:0] isEqualToString:@"review"]) {
             UINavigationController *navVC = (UINavigationController*)self.window.rootViewController;
             [navVC popToRootViewControllerAnimated:NO];
             UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
             UIViewController *secondvc = [storyboard instantiateViewControllerWithIdentifier:@"secondvcID"];
             [navVC pushViewController:secondvc animated:NO];
-        } else if ([[url path] isEqualToString:@"/thirdvc"]) {
+        } else if ([[url path] isEqualToString:@"thirdvc"]) {
             UINavigationController *navVC = (UINavigationController*)self.window.rootViewController;
             [navVC popToRootViewControllerAnimated:NO];
             UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];

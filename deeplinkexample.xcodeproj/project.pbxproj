@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D09B25461C44260E00EFCA39 /* ReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D09B25451C44260E00EFCA39 /* ReviewViewController.m */; };
+		D09B25471C44260E00EFCA39 /* ReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D09B25451C44260E00EFCA39 /* ReviewViewController.m */; };
+		D09B25481C44260E00EFCA39 /* ReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D09B25451C44260E00EFCA39 /* ReviewViewController.m */; };
 		D0D3E1A21C3EF4C4000789C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D3E1A11C3EF4C4000789C3 /* main.m */; };
 		D0D3E1A51C3EF4C4000789C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D3E1A41C3EF4C4000789C3 /* AppDelegate.m */; };
 		D0D3E1A81C3EF4C4000789C3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D3E1A71C3EF4C4000789C3 /* ViewController.m */; };
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D09B25441C44260E00EFCA39 /* ReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewViewController.h; sourceTree = "<group>"; };
+		D09B25451C44260E00EFCA39 /* ReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewViewController.m; sourceTree = "<group>"; };
 		D0D3E19D1C3EF4C4000789C3 /* deeplinkexample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deeplinkexample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D3E1A11C3EF4C4000789C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D0D3E1A31C3EF4C4000789C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,6 +110,8 @@
 				D0D3E1A41C3EF4C4000789C3 /* AppDelegate.m */,
 				D0D3E1A61C3EF4C4000789C3 /* ViewController.h */,
 				D0D3E1A71C3EF4C4000789C3 /* ViewController.m */,
+				D09B25441C44260E00EFCA39 /* ReviewViewController.h */,
+				D09B25451C44260E00EFCA39 /* ReviewViewController.m */,
 				D0D3E1A91C3EF4C4000789C3 /* Main.storyboard */,
 				D0D3E1AC1C3EF4C4000789C3 /* Assets.xcassets */,
 				D0D3E1AE1C3EF4C4000789C3 /* LaunchScreen.storyboard */,
@@ -207,7 +214,7 @@
 				TargetAttributes = {
 					D0D3E19C1C3EF4C4000789C3 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = VM45C34Q3B;
+						DevelopmentTeam = LYWVWF962T;
 					};
 					D0D3E1B51C3EF4C4000789C3 = {
 						CreatedOnToolsVersion = 7.2;
@@ -273,6 +280,7 @@
 			files = (
 				D0D3E1A81C3EF4C4000789C3 /* ViewController.m in Sources */,
 				D0D3E1A51C3EF4C4000789C3 /* AppDelegate.m in Sources */,
+				D09B25461C44260E00EFCA39 /* ReviewViewController.m in Sources */,
 				D0D3E1A21C3EF4C4000789C3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D09B25471C44260E00EFCA39 /* ReviewViewController.m in Sources */,
 				D0D3E1BB1C3EF4C4000789C3 /* deeplinkexampleTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D09B25481C44260E00EFCA39 /* ReviewViewController.m in Sources */,
 				D0D3E1C61C3EF4C4000789C3 /* deeplinkexampleUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,7 +426,7 @@
 				INFOPLIST_FILE = deeplinkexample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Zillow.deeplinkexample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zillow.Postlets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -429,7 +439,7 @@
 				INFOPLIST_FILE = deeplinkexample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Zillow.deeplinkexample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zillow.Postlets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

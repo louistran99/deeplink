@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ReviewViewController.h"
 
 @interface ViewController ()
 
@@ -24,6 +25,13 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (IBAction)openReviewPage:(id)sender {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    ReviewViewController *reviewVC = [storyboard instantiateViewControllerWithIdentifier:@"secondvcID"];
+    [self.navigationController pushViewController:reviewVC animated:YES];
 }
 
 @end
